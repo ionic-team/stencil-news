@@ -1,5 +1,7 @@
 exports.config = {
+  publicPath: 'build',
   bundles: [
-    { components: ['my-name'] }
+    { components: ['app-list', 'share-button', 'lazy-ad', 'lazy-img'] },
+    { components: ['app-header', 'main-page'] }
   ]
 };

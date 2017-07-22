@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>Stencil Starter App</title>
-  <script src="build/app.js"></script>
-</head>
-<body>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
 
-  <my-name first="Stencil" last="JS"></my-name>
+  <meta name="theme-color" content="#2196F3">
+
+  <link rel="manifest" href="manifest.json">
+
+  <title>StencilNews</title>
+  <script src="build/app.js"></script>
+
+</head>
+
+<body style="margin: 0; font-family: sans-serif;  background: #efefef;">
+
+  <main-page></main-page>
+
+  <script>
+    /*window.addEventListener('load', () => {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.error('Error', err));
+      }
+    })*/
+  </script>
 
 </body>
+
 </html>

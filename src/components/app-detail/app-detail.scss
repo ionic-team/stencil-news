@@ -1,0 +1,38 @@
+.open {
+    opacity: 1 !important;
+  }
+
+  app-detail {
+    visibility: visible !important;
+
+    p {
+      -webkit-margin-before: 0;
+    }
+
+    #detailRead {
+      background: #2196F3;
+      color: white;
+      border: none;
+      text-transform: uppercase;
+      font-size: 1em;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    img {
+      max-width: 100%;
+      height: 219px;
+    }
+
+    #closeButton {
+      position: absolute;
+      right: 16px;
+      top: 1em;
+      border: none;
+      background: transparent;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #2196F3;
+      font-size: 1em;
+    }
+  }

@@ -1,0 +1,163 @@
+main-page {
+  #tabs {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #607D8B;
+    color: white;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+
+    button {
+      flex: 1;
+      color: white;
+      font-size: 1.1em;
+      border: none;
+      background: transparent;
+      outline: none;
+    }
+  }
+
+  #topStories {
+    margin-top: 3em;
+    margin-left: 10px;
+    font-size: 1.7em;
+  }
+
+   #card-content {
+        padding: 10px;
+        background: white;
+      margin: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 1;
+
+        #actions {
+          display: flex;
+          justify-content: flex-end;
+
+          button {
+            background: transparent;
+            border: none;
+            color: #607D8B;
+            outline: none;
+          }
+
+          #readButton {
+            text-transform: uppercase;
+            font-size: 1em;
+            width: 6em;
+          }
+        }
+
+        h3 {
+          -webkit-margin-before: 0;
+          -webkit-margin-after: 0;
+          font-weight: normal;
+        }
+      }
+
+  footer {
+    background: white;
+    text-align: center;
+    height: 32px;
+    line-height: 32px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #newsProviders {
+    margin-left: 10px;
+    font-size: 1.7em;
+  }
+
+  #loadBlock {
+    display: flex;
+    justify-content: space-around;
+
+    button {
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNjQgNjQiIGhlaWdodD0iNjRweCIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNjQgNjQiIHdpZHRoPSI2NHB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBpZD0iTGF5ZXJfMSI+PGc+PGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgZmlsbD0iIzc3QjNENCIgcj0iMzIiLz48L2c+PGcgb3BhY2l0eT0iMC4yIj48cGF0aCBkPSJNNDgsNTBjMCwyLjIwOS0xLjc5MSw0LTQsNEgyMGMtMi4yMDksMC00LTEuNzkxLTQtNFYxOGMwLTIuMjA5LDEuNzkxLTQsNC00aDI0YzIuMjA5LDAsNCwxLjc5MSw0LDRWNTB6IiBmaWxsPSIjMjMxRjIwIi8+PC9nPjxnPjxwYXRoIGQ9Ik00OCw0OGMwLDIuMjA5LTEuNzkxLDQtNCw0SDIwYy0yLjIwOSwwLTQtMS43OTEtNC00VjE2YzAtMi4yMDksMS43OTEtNCw0LTRoMjRjMi4yMDksMCw0LDEuNzkxLDQsNFY0OHoiIGZpbGw9IiM0RjVENzMiLz48L2c+PGcgb3BhY2l0eT0iMC4yIj48Zz48cGF0aCBkPSJNMzUsMTR2Ny44NDZjMCwwLjI2NCwwLjE2MywwLjUwMywwLjQxMSwwLjYwNGMwLjA4MywwLjAzMywwLjE2OSwwLjA1LDAuMjU1LDAuMDUgICAgIGMwLjE3MywwLDAuMzQ0LTAuMDY3LDAuNDcxLTAuMTkyTDM5LDE5LjUwMWwyLjg2MiwyLjgwN2MwLjEyNywwLjEyNSwwLjI5OCwwLjE5MiwwLjQ3MSwwLjE5MmMwLjA4NiwwLDAuMTczLTAuMDE2LDAuMjU1LTAuMDUgICAgIEM0Mi44MzcsMjIuMzQ5LDQzLDIyLjExLDQzLDIxLjg0NlYxNEgzNXoiIGZpbGw9IiMyMzFGMjAiLz48L2c+PC9nPjxnPjxnPjxwYXRoIGQ9Ik0zNSwxMnY3Ljg0NmMwLDAuMjY0LDAuMTYzLDAuNTAzLDAuNDExLDAuNjA0YzAuMDgzLDAuMDMzLDAuMTY5LDAuMDUsMC4yNTUsMC4wNSAgICAgYzAuMTczLDAsMC4zNDQtMC4wNjcsMC40NzEtMC4xOTJMMzksMTcuNTAxbDIuODYyLDIuODA3YzAuMTI3LDAuMTI1LDAuMjk4LDAuMTkyLDAuNDcxLDAuMTkyYzAuMDg2LDAsMC4xNzMtMC4wMTYsMC4yNTUtMC4wNSAgICAgQzQyLjgzNywyMC4zNDksNDMsMjAuMTEsNDMsMTkuODQ2VjEySDM1eiIgZmlsbD0iI0M3NUM1QyIvPjwvZz48L2c+PGc+PHJlY3QgZmlsbD0iI0UwRTBEMSIgaGVpZ2h0PSI0MCIgd2lkdGg9IjMiIHg9IjIwIiB5PSIxMiIvPjwvZz48L2c+PGcgaWQ9IkxheWVyXzIiLz48L3N2Zz4=);
+      border: none;
+      background-color: white;
+      color: black;
+      border-radius: 5px;
+      font-size: 1em;
+      height: 8em;
+      width: 8em;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0.4em;
+      align-items: center;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+      outline: none;
+    }
+  }
+
+  h2 {
+    display: none;
+  }
+
+  #sidebar {
+    display: none;
+    flex-direction: column;
+    width: 20em;
+    float: left;
+    justify-content: flex-start;
+    padding-left: 15px;
+    position: sticky;
+    top:66px;
+
+    h3 {
+      font-size: 1.8em;
+    }
+
+    button {
+      background: transparent;
+      border: none;
+      color: #607D8B;
+      width: 50%;
+      font-size: 1.5em;
+      margin-top: 20px;
+      outline: none;
+    }
+
+    lazy-ad {
+      position: fixed;
+      bottom: -70px;
+    }
+  }
+
+  @media(min-width: 800px) {
+    #tabs {
+      justify-content: center;
+
+      button {
+        flex: 0.2;
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+    }
+  }
+
+  @media(min-width: 1300px) {
+    #tabs {
+      display: none;
+    }
+
+    h2 {
+      display: inline-block;
+      margin-top: 4em;
+    }
+
+    #sidebar {
+      display: flex;
+    }
+  }
+}

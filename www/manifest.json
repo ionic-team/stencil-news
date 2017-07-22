@@ -1,0 +1,13 @@
+{
+  "name": "StencilNews",
+  "short_name": "StencilNews",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "images/512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "background_color": "#2196F3",
+  "theme_color": "#2196F3"
+}
