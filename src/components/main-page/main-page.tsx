@@ -1,5 +1,6 @@
 import { Component, h, State } from '@stencil/core';
 
+declare var idbKeyval: any;
 
 @Component({
   tag: 'main-page',
@@ -9,9 +10,16 @@ export class MainPage {
 
   @State() sources: any[];
   @State() articleSrc: string;
+  @State() offlineItems: any[] = [];
 
   ionViewWillLoad() {
-    // this.fetchNews('the-next-web')
+    setTimeout(() => {
+      idbKeyval.get('offlineArticles').then((data) => {
+        if (data !== undefined) {
+          this.offlineItems = data;
+        }
+      });
+    }, 100)
   }
 
   fakeFetch(url: string): Promise<any> {
@@ -40,39 +48,88 @@ export class MainPage {
     })
   }
 
-  open(url) {
+  open(url: string) {
     window.open(url);
   }
 
   render() {
-    if (!this.sources) {
+    console.log('render', this.offlineItems);
+    if (!this.sources && this.offlineItems.length > 0) {
+      const offlineArticles = this.offlineItems.map((article) => {
+        return (
+          <div id="topCard">
+            <h3>{article.title}</h3>
+            <p id="desc">{article.description}</p>
+            <div id="actions">
+              <button id="readButton" onClick={() => this.open(article.url)}>Read</button>
+            </div>
+          </div>
+        )
+      });
       return [
         <app-header>
         </app-header>,
 
-        <h3 id='topStories'>Top Story</h3>,
+        <main class='content'>
+          <h3 id='topStories'>Top Story</h3>
 
-        <div id="card-content">
-          <h3>Scientists are now using Wi-Fi to read human emotions</h3>
-          <p id="desc">Scientists at MIT are using Wi-Fi and AI to determine your emotional state. They've created an algorithm that can detect and measure individual heartbeats by bouncing RF signals off ...</p>
-          <div id="actions">
-            <button id="readButton" onClick={() => this.open('https://thenextweb.com/artificial-intelligence/2017/07/22/scientists-create-ai-that-uses-wi-fi-to-see-emotions/#.tnw_LXnzsXrt')}>Read</button>
+        <div id="topCard">
+            <h3>Scientists are now using Wi-Fi to read human emotions</h3>
+            <p id="desc">Scientists at MIT are using Wi-Fi and AI to determine your emotional state. They've created an algorithm that can detect and measure individual heartbeats by bouncing RF signals off ...</p>
+            <div id="actions">
+              <button id="readButton" onClick={() => this.open('https://thenextweb.com/artificial-intelligence/2017/07/22/scientists-create-ai-that-uses-wi-fi-to-see-emotions/#.tnw_LXnzsXrt')}>Read</button>
+            </div>
           </div>
-        </div>,
 
-        <h3 id='newsProviders'>News Providers</h3>,
+        <h3 class='newsProviders'>More News</h3>
 
         <div id='loadBlock'>
-          <button class='loadButton' onClick={() => this.fetchNews('the-next-web')}>The Next Web</button>
-          <button class='loadButton' onClick={() => this.fetchNews('the-verge')}>The Verge</button>
-          <button class='loadButton' onClick={() => this.fetchNews('engadget')}>Engadget</button>
-        </div>,
+            <button class='loadButton' onClick={() => this.fetchNews('the-next-web')}>The Next Web</button>
+            <button class='loadButton' onClick={() => this.fetchNews('the-verge')}>The Verge</button>
+            <button class='loadButton' onClick={() => this.fetchNews('engadget')}>Engadget</button>
+          </div>
 
-        <footer>
-          <span>Made with Stencil</span>
-        </footer>
+        <h3 class='newsProviders'>Offline Articles</h3>
+
+        <div id='savedBlock'>
+            {offlineArticles}
+          </div>
+        </main>
       ];
-    } else {
+    } else if (!this.sources && this.offlineItems.length === 0) {
+      return [
+        <app-header>
+        </app-header>,
+
+        <main class='content'>
+
+          <h3 id='topStories'>Top Story</h3>
+
+        <div id="topCard">
+            <h3>Scientists are now using Wi-Fi to read human emotions</h3>
+            <p id="desc">Scientists at MIT are using Wi-Fi and AI to determine your emotional state. They've created an algorithm that can detect and measure individual heartbeats by bouncing RF signals off ...</p>
+            <div id="actions">
+              <button id="readButton" onClick={() => this.open('https://thenextweb.com/artificial-intelligence/2017/07/22/scientists-create-ai-that-uses-wi-fi-to-see-emotions/#.tnw_LXnzsXrt')}>Read</button>
+            </div>
+          </div>
+
+        <h3 class='newsProviders'>More News</h3>
+
+        <div id='loadBlock'>
+            <button class='loadButton' onClick={() => this.fetchNews('the-next-web')}>The Next Web</button>
+            <button class='loadButton' onClick={() => this.fetchNews('the-verge')}>The Verge</button>
+            <button class='loadButton' onClick={() => this.fetchNews('engadget')}>Engadget</button>
+          </div>
+
+        <h3 class='newsProviders'>Offline Articles</h3>
+
+        <div id='savedBlock'>
+            <p id='noSaved'>Save some articles for offline reading!</p>
+          </div>
+        </main>
+      ]
+    }
+    else {
       return [
         <app-header>
         </app-header>,

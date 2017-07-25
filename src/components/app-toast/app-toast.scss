@@ -1,0 +1,18 @@
+app-toast {
+  position: fixed;
+  z-index: 9999;
+  bottom: 10px;
+  left: 10px;
+  background: #545454;
+  padding: 1em;
+  color: white;
+  width: 12em;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transform: translate(0, 65px);
+  transition: 0.4s ease-in-out;
+}
+
+.open {
+  transform: translate(0, 0) !important;
+  visibility: visible !important;
+}

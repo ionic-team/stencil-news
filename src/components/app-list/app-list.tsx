@@ -1,5 +1,6 @@
 import { Component, h, Prop, State } from '@stencil/core';
 
+declare var idbKeyval: any;
 
 @Component({
   tag: 'app-list',
@@ -9,8 +10,9 @@ export class AppList {
 
   @Prop() articles: any[];
   @State() detail: any = null;
+  @State() saved: boolean = false;
 
-  open(url) {
+  open(url: string) {
     window.open(url);
   }
 
@@ -25,6 +27,31 @@ export class AppList {
   close() {
     document.querySelector('#detailOverlay').className = '';
     this.detail = null;
+  }
+
+  save(article) {
+    idbKeyval.get('offlineArticles').then((value) => {
+      if (value === undefined) {
+        const articles = [];
+        articles.push(article);
+        idbKeyval.set('offlineArticles', articles).then(() => {
+          console.log('article saved');
+          this.saved = true;
+          setTimeout(() => {
+            this.saved = false;
+          }, 2000);
+        })
+      } else {
+        value.push(article);
+        idbKeyval.set('offlineArticles', value).then(() => {
+          console.log('article saved');
+          this.saved = true;
+          setTimeout(() => {
+            this.saved = false;
+          }, 2000);
+        })
+      }
+    })
   }
 
   render() {
@@ -42,10 +69,13 @@ export class AppList {
                 <p id='desc'>{article.description}</p>
 
                 <div id='actions'>
-                  <button id='readButton' onClick={() => this.details(article)}>
+                  <button class='readButton' onClick={() => this.save(article)}>
+                    Save
+                  </button>
+                  <button class='readButton' onClick={() => this.details(article)}>
                     Details
               </button>
-                  <button onClick={() => this.open(article.url)} id='readButton'>
+                  <button onClick={() => this.open(article.url)} class='readButton'>
                     Read
               </button>
                   <share-button urlToShare={article.url}>
@@ -62,7 +92,11 @@ export class AppList {
           {items}
         </ul>,
 
-        {/*<lazy-ad src='ads/ad.html'></lazy-ad>*/}
+        <app-toast open={this.saved}>
+          Article saved offline
+        </app-toast>,
+
+        <lazy-ad src='ads/ad.html'></lazy-ad>
       ];
     }
     else if (this.detail) {
@@ -70,7 +104,7 @@ export class AppList {
         <div id='detailOverlay'>
           <button id='closeButton' onClick={() => this.close()}>Close</button>
 
-          <img data-original={this.detail.urlToImage} alt={this.detail.title}></img>
+          <img src={this.detail.urlToImage} alt={this.detail.title}></img>
 
           <h2>{this.detail.title}</h2>
           <p>By {this.detail.author}</p>

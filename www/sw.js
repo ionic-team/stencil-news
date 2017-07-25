@@ -24,15 +24,19 @@ const fileManifest = [
   },
   {
     "url": "build/app.js",
-    "revision": "bc36cf5a72b51b167f9db31439fdb9a7"
+    "revision": "b54f7b85dc623a4d5642f9be9d41946e"
   },
   {
     "url": "build/app.registry.json",
-    "revision": "00220991b4a356e85249d9029eceb817"
+    "revision": "3561cc07a0fd360334fb3d0c5948fdc4"
   },
   {
-    "url": "build/app\\1n8lvhnyydjg.css",
-    "revision": "baafb83f3858282509aec24f65b96749"
+    "url": "build/app\\3t1gedldn6t4.css",
+    "revision": "16753566796c394451c57bd642cbeadf"
+  },
+  {
+    "url": "build/app\\6uxoobkxa0i3.js",
+    "revision": "d66192f75e51775203cc89dab280db5e"
   },
   {
     "url": "build/app\\app.bqbgjybjwvhn.ce.js",
@@ -43,16 +47,20 @@ const fileManifest = [
     "revision": "37bb2e00b30a13fed8b76765baf0e2af"
   },
   {
-    "url": "build/app\\idezlqeyxvxw.js",
-    "revision": "f23b3def07788a369d4106dbcd8b6263"
+    "url": "build/app\\gazxuuiqsfug.css",
+    "revision": "168ea834b7b37aacfe6068c79661c738"
   },
   {
-    "url": "build/app\\oaq6p3msm4sr.css",
-    "revision": "6c7848021d2930e6abe3fbf033a87db2"
+    "url": "build/app\\jwsnrjrgtmzt.js",
+    "revision": "d00e0e07bd4b74ce35bfe831d479bf27"
   },
   {
-    "url": "build/app\\uvtyendnba7o.js",
-    "revision": "b5b75425a3b20420938fae445c581736"
+    "url": "build/app\\sjx79y562too.js",
+    "revision": "d5664288a6b4d3e267a2d3974dcaeeef"
+  },
+  {
+    "url": "build/app\\y92l16xw3acq.css",
+    "revision": "1aaf9be52602c8508cfed42c39741cf4"
   },
   {
     "url": "favicon.ico",
@@ -60,11 +68,11 @@ const fileManifest = [
   },
   {
     "url": "index.html",
-    "revision": "77c79238667c852af3557573fbe81118"
+    "revision": "0ff3262b3150bad2157a349058a81bd7"
   },
   {
     "url": "manifest.json",
-    "revision": "328fc52a095599d574d1ef56eb21ebf4"
+    "revision": "cdf99c352a184f9fb27737e177a15f8d"
   }
 ];
 

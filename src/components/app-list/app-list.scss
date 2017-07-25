@@ -17,12 +17,8 @@ app-list {
     will-change: opacity;
     transition: opacity 300ms;
 
-    p {
-      -webkit-margin-before: 0;
-    }
-
     #detailRead {
-      background: #607D8B;
+      background: #253136;
       color: white;
       border: none;
       text-transform: uppercase;
@@ -30,10 +26,11 @@ app-list {
       padding: 10px;
       border-radius: 5px;
       outline: none;
+      margin-top: 25px;
     }
 
     #shareButton {
-      background: #607D8B;
+      background: #253136;
       color: white;
       border: none;
       text-transform: uppercase;
@@ -67,7 +64,7 @@ app-list {
       background: transparent;
       text-transform: uppercase;
       font-weight: bold;
-      color: #607D8B;
+      color: #253136;
       font-size: 1em;
       outline: none;
     }
@@ -93,9 +90,15 @@ app-list {
     }
   }
 
+  @media(max-width: 400px) {
+    ul {
+      flex-direction: column;
+    }
+  }
+
   ul {
     list-style: none;
-    -webkit-padding-start: 0;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     margin-top: 4.2em;
@@ -124,11 +127,11 @@ app-list {
           button {
             background: transparent;
             border: none;
-            color: #607D8B;
+            color: #253136;
             outline: none;
           }
 
-          #readButton {
+          .readButton {
             text-transform: uppercase;
             font-size: 1em;
             width: 6em;
@@ -136,8 +139,7 @@ app-list {
         }
 
         h3 {
-          -webkit-margin-before: 0;
-          -webkit-margin-after: 0;
+          margin: 0;
           font-weight: normal;
         }
       }
