@@ -76,6 +76,7 @@ export class MainPage {
         </app-header>,
 
         <main class='content'>
+
           <h3 id='topStories'>Top Story</h3>
 
           <div id="topCard">
@@ -95,6 +96,10 @@ export class MainPage {
           </div>
 
           <h3 class='newsProviders'>Offline Articles</h3>
+
+          <div class='loginBlock'>
+            <app-login></app-login>
+          </div>
 
           <div id='savedBlock'>
             {offlineArticles}

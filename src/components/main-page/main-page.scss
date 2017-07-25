@@ -24,6 +24,11 @@ main-page {
     }
   }
 
+  .loginBlock {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+
   @media(min-width: 760px) {
     .content {
       margin-left: 4em;
@@ -57,9 +62,9 @@ main-page {
   }
 
   #topStories {
-    margin-top: 3em;
     margin-left: 10px;
     font-size: 1.7em;
+    margin-top: 3em;
   }
 
    #topCard {
