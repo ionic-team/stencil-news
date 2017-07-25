@@ -16,6 +16,11 @@ main-page {
       border: none;
       background: transparent;
       outline: none;
+      transition: 0.3s, ease-in-out;
+    }
+
+    button:focus {
+      transform: translate(0, -3px);
     }
   }
 

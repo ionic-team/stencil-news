@@ -40,12 +40,17 @@ export class MainPage {
   }
 
   fetchNews(src: string) {
-    this.articleSrc = src.replace(/-/g, " ");
-    console.log('fetching');
-    this.fakeFetch(`https://newsapi.org/v1/articles?source=${src}&apiKey=3f03728668574e6794634e6244b18091`).then((data: any) => {
-      console.log(data.articles);
-      this.sources = data.articles;
-    })
+    console.log(src);
+    console.log(this.articleSrc);
+    if (src.replace(/-/g, " ") !== this.articleSrc) {
+      console.log('in here');
+      this.articleSrc = src.replace(/-/g, " ");
+      console.log('fetching');
+      this.fakeFetch(`https://newsapi.org/v1/articles?source=${src}&apiKey=3f03728668574e6794634e6244b18091`).then((data: any) => {
+        console.log(data.articles);
+        this.sources = data.articles;
+      })
+    }
   }
 
   open(url: string) {
@@ -73,7 +78,7 @@ export class MainPage {
         <main class='content'>
           <h3 id='topStories'>Top Story</h3>
 
-        <div id="topCard">
+          <div id="topCard">
             <h3>Scientists are now using Wi-Fi to read human emotions</h3>
             <p id="desc">Scientists at MIT are using Wi-Fi and AI to determine your emotional state. They've created an algorithm that can detect and measure individual heartbeats by bouncing RF signals off ...</p>
             <div id="actions">
@@ -81,17 +86,17 @@ export class MainPage {
             </div>
           </div>
 
-        <h3 class='newsProviders'>More News</h3>
+          <h3 class='newsProviders'>More News</h3>
 
-        <div id='loadBlock'>
+          <div id='loadBlock'>
             <button class='loadButton' onClick={() => this.fetchNews('the-next-web')}>The Next Web</button>
             <button class='loadButton' onClick={() => this.fetchNews('the-verge')}>The Verge</button>
             <button class='loadButton' onClick={() => this.fetchNews('engadget')}>Engadget</button>
           </div>
 
-        <h3 class='newsProviders'>Offline Articles</h3>
+          <h3 class='newsProviders'>Offline Articles</h3>
 
-        <div id='savedBlock'>
+          <div id='savedBlock'>
             {offlineArticles}
           </div>
         </main>
@@ -105,7 +110,7 @@ export class MainPage {
 
           <h3 id='topStories'>Top Story</h3>
 
-        <div id="topCard">
+          <div id="topCard">
             <h3>Scientists are now using Wi-Fi to read human emotions</h3>
             <p id="desc">Scientists at MIT are using Wi-Fi and AI to determine your emotional state. They've created an algorithm that can detect and measure individual heartbeats by bouncing RF signals off ...</p>
             <div id="actions">
@@ -113,17 +118,17 @@ export class MainPage {
             </div>
           </div>
 
-        <h3 class='newsProviders'>More News</h3>
+          <h3 class='newsProviders'>More News</h3>
 
-        <div id='loadBlock'>
+          <div id='loadBlock'>
             <button class='loadButton' onClick={() => this.fetchNews('the-next-web')}>The Next Web</button>
             <button class='loadButton' onClick={() => this.fetchNews('the-verge')}>The Verge</button>
             <button class='loadButton' onClick={() => this.fetchNews('engadget')}>Engadget</button>
           </div>
 
-        <h3 class='newsProviders'>Offline Articles</h3>
+          <h3 class='newsProviders'>Offline Articles</h3>
 
-        <div id='savedBlock'>
+          <div id='savedBlock'>
             <p id='noSaved'>Save some articles for offline reading!</p>
           </div>
         </main>
