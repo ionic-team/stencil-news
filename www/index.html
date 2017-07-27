@@ -9,21 +9,18 @@
   <link rel="manifest" href="manifest.json">
 
   <title>StencilNews</title>
+  
 
 </head>
 
-<body style="margin: 0; font-family: sans-serif;  background: #efefef;"> <main-page ssrv="0" class="💎"><app-header ssrc="0.0."></app-header><main class="content" ssrc="0.1"><h3 id="topStories" ssrc="0.0"><!--s.0.0-->Top Story<!--/--></h3><div id="topCard" ssrc="0.1"><h3 ssrc="0.0"><!--s.0.0-->Scientists are now using Wi-Fi to read human emotions<!--/--></h3><p id="desc" ssrc="0.1"><!--s.0.0-->Scientists at MIT are using Wi-Fi and AI to determine your emotional state. They've created an algorithm that can detect and measure individual heartbeats by bouncing RF signals off ...<!--/--></p><div id="actions" ssrc="0.2"><button id="readButton" ssrc="0.0"><!--s.0.0-->Read<!--/--></button></div></div><h3 class="newsProviders" ssrc="0.2"><!--s.0.0-->More News<!--/--></h3><div id="loadBlock" ssrc="0.3"><button class="loadButton" ssrc="0.0"><!--s.0.0-->The Next Web<!--/--></button><button class="loadButton" ssrc="0.1"><!--s.0.0-->The Verge<!--/--></button><button class="loadButton" ssrc="0.2"><!--s.0.0-->Engadget<!--/--></button></div><div class="loginBlock" ssrc="0.4"><app-login ssrc="0.0."></app-login></div><h3 class="newsProviders" ssrc="0.5"><!--s.0.0-->Offline Articles<!--/--></h3><div id="savedBlock" ssrc="0.6"><p id="noSaved" ssrc="0.0"><!--s.0.0-->Save some articles for offline reading!<!--/--></p></div></main></main-page> 
-<script>/*! Built with http://stenciljs.com */
-
-!function(e,t,d,n,p,i,r){(e.App=e.App||{}).components=i=i||[],(r=t.createElement("style")).innerHTML=(i.map(function(e){return e[0]}).join(",")+"{visibility:hidden}.💎{visibility:inherit}").toLowerCase(),r.innerHTML+="ion-app:not(.💎){display:none}",t.head.appendChild(r),(r=t.createElement("script")).src=e.customElements?"build/app/app.3zyhdklr31al.js":"build/app/app.kj9hwkiyjauk.ce.js",t.head.appendChild(r)}(window,document,0,0,0,[["APP-HEADER","04uq3upfrrsb",{$:"5odjhhzqkfo8"}],["APP-LIST","4k29d7juvmjz",{$:"bttd2zlkhe15"},0,[["articles"]]],["APP-LOGIN","04uq3upfrrsb",{$:"5odjhhzqkfo8"}],["APP-TOAST","pyejo2xryul0",{$:"3t1gedldn6t4"},1,[["open",0,1]]],["LAZY-AD","4k29d7juvmjz",{$:"bttd2zlkhe15"},0,[["src"]]],["LAZY-IMG","4k29d7juvmjz",{$:"bttd2zlkhe15"},0,[["alt"],["src"]]],["MAIN-PAGE","04uq3upfrrsb",{$:"5odjhhzqkfo8"}],["SHARE-BUTTON","4k29d7juvmjz",{$:"bttd2zlkhe15"},1,[["urlToShare"]]]]);</script>
-<script>
-    window.addEventListener('load', () => {
+<body style="margin: 0; font-family: sans-serif;  background: #efefef;"> <routes-page ssrv="0" class="💎"><app-header ssrc="0.0."></app-header><stencil-router id="router" ssrc="0.1"><stencil-route url="/" router="#router" component="main-page" ssrc="0.0."></stencil-route><stencil-route url="/news" router="#router" component="list-page" ssrc="0.1."></stencil-route></stencil-router></routes-page> <script>
+    /*window.addEventListener('load', () => {
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('sw.js')
           .then(() => console.log('service worker installed'))
           .catch(err => console.error('Error', err));
       }
-    })
+    })*/
 </script> <script>
     window.addEventListener('load', () => {
       if ('serviceWorker' in navigator) {
@@ -44,4 +41,23 @@
       messagingSenderId: "597314505791"
     };
     firebase.initializeApp(config);
-  </script> </body></html>
+  </script> <script>/*! Built with http://stenciljs.com */
+
+(function (window, document, appNamespace, appCore, appCoreEs5, components, x) {
+    'use strict';
+    // create global namespace if it doesn't already exist
+
+    (window[appNamespace] = window[appNamespace] || {}).components = components = components || [];
+    // auto hide components until they been fully hydrated
+    // reusing the "x" variable from the args for funzies
+    x = document.createElement('style');
+    x.innerHTML = (components.map(function (c) {
+        return c[0];
+    }).join(',') + '{visibility:hidden}.💎{visibility:inherit}').toLowerCase();
+    x.innerHTML += 'ion-app:not(.💎){display:none}';
+    document.head.appendChild(x);
+    // request the core file this browser needs
+    x = document.createElement('script');
+    x.src = window.customElements ? appCore : appCoreEs5;
+    document.head.appendChild(x);
+})(window, document, "App","build/app/app.core.js","build/app/app.core.ce.js",[["APP-HEADER","app-header.app-login.main-page.routes-page.stencil",{"$":"app-header.app-login.main-page.routes-page.stencil"}],["APP-LIST","app-list.lazy-ad.lazy-img.list-page.share-button",{"$":"app-list.lazy-ad.lazy-img.list-page.share-button"},0,[["articles"]]],["APP-LOGIN","app-header.app-login.main-page.routes-page.stencil",{"$":"app-header.app-login.main-page.routes-page.stencil"}],["APP-TOAST","app-toast",{"$":"app-toast"},1,[["open",0,1]]],["LAZY-AD","app-list.lazy-ad.lazy-img.list-page.share-button",{"$":"app-list.lazy-ad.lazy-img.list-page.share-button"},0,[["src"]]],["LAZY-IMG","app-list.lazy-ad.lazy-img.list-page.share-button",{"$":"app-list.lazy-ad.lazy-img.list-page.share-button"},0,[["alt"],["src"]]],["LIST-PAGE","app-list.lazy-ad.lazy-img.list-page.share-button",{"$":"app-list.lazy-ad.lazy-img.list-page.share-button"}],["MAIN-PAGE","app-header.app-login.main-page.routes-page.stencil",{"$":"app-header.app-login.main-page.routes-page.stencil"}],["ROUTES-PAGE","app-header.app-login.main-page.routes-page.stencil",{"$":"app-header.app-login.main-page.routes-page.stencil"}],["SHARE-BUTTON","app-list.lazy-ad.lazy-img.list-page.share-button",{"$":"app-list.lazy-ad.lazy-img.list-page.share-button"},1,[["urlToShare"]]],["STENCIL-ROUTE","app-header.app-login.main-page.routes-page.stencil",{"$":"app-header.app-login.main-page.routes-page.stencil"},0,[["component"],["componentProps"],["exact",0,1],["router"],["url"]]],["STENCIL-ROUTE-LINK","app-header.app-login.main-page.routes-page.stencil",{"$":"app-header.app-login.main-page.routes-page.stencil"},1,[["custom",0,1],["router"],["url"]]],["STENCIL-ROUTER","app-header.app-login.main-page.routes-page.stencil",{"$":"app-header.app-login.main-page.routes-page.stencil"},1,[["root"]]]]);</script></body></html>

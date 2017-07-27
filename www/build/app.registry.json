@@ -3,16 +3,16 @@
   "components": [
     [
       "APP-HEADER",
-      "04uq3upfrrsb",
+      "app-header.app-login.main-page.routes-page.stencil",
       {
-        "$": "5odjhhzqkfo8"
+        "$": "app-header.app-login.main-page.routes-page.stencil"
       }
     ],
     [
       "APP-LIST",
-      "4k29d7juvmjz",
+      "app-list.lazy-ad.lazy-img.list-page.share-button",
       {
-        "$": "bttd2zlkhe15"
+        "$": "app-list.lazy-ad.lazy-img.list-page.share-button"
       },
       0,
       [
@@ -23,16 +23,16 @@
     ],
     [
       "APP-LOGIN",
-      "04uq3upfrrsb",
+      "app-header.app-login.main-page.routes-page.stencil",
       {
-        "$": "5odjhhzqkfo8"
+        "$": "app-header.app-login.main-page.routes-page.stencil"
       }
     ],
     [
       "APP-TOAST",
-      "pyejo2xryul0",
+      "app-toast",
       {
-        "$": "3t1gedldn6t4"
+        "$": "app-toast"
       },
       1,
       [
@@ -45,9 +45,9 @@
     ],
     [
       "LAZY-AD",
-      "4k29d7juvmjz",
+      "app-list.lazy-ad.lazy-img.list-page.share-button",
       {
-        "$": "bttd2zlkhe15"
+        "$": "app-list.lazy-ad.lazy-img.list-page.share-button"
       },
       0,
       [
@@ -58,9 +58,9 @@
     ],
     [
       "LAZY-IMG",
-      "4k29d7juvmjz",
+      "app-list.lazy-ad.lazy-img.list-page.share-button",
       {
-        "$": "bttd2zlkhe15"
+        "$": "app-list.lazy-ad.lazy-img.list-page.share-button"
       },
       0,
       [
@@ -73,17 +73,31 @@
       ]
     ],
     [
-      "MAIN-PAGE",
-      "04uq3upfrrsb",
+      "LIST-PAGE",
+      "app-list.lazy-ad.lazy-img.list-page.share-button",
       {
-        "$": "5odjhhzqkfo8"
+        "$": "app-list.lazy-ad.lazy-img.list-page.share-button"
+      }
+    ],
+    [
+      "MAIN-PAGE",
+      "app-header.app-login.main-page.routes-page.stencil",
+      {
+        "$": "app-header.app-login.main-page.routes-page.stencil"
+      }
+    ],
+    [
+      "ROUTES-PAGE",
+      "app-header.app-login.main-page.routes-page.stencil",
+      {
+        "$": "app-header.app-login.main-page.routes-page.stencil"
       }
     ],
     [
       "SHARE-BUTTON",
-      "4k29d7juvmjz",
+      "app-list.lazy-ad.lazy-img.list-page.share-button",
       {
-        "$": "bttd2zlkhe15"
+        "$": "app-list.lazy-ad.lazy-img.list-page.share-button"
       },
       1,
       [
@@ -91,9 +105,70 @@
           "urlToShare"
         ]
       ]
+    ],
+    [
+      "STENCIL-ROUTE",
+      "app-header.app-login.main-page.routes-page.stencil",
+      {
+        "$": "app-header.app-login.main-page.routes-page.stencil"
+      },
+      0,
+      [
+        [
+          "component"
+        ],
+        [
+          "componentProps"
+        ],
+        [
+          "exact",
+          0,
+          1
+        ],
+        [
+          "router"
+        ],
+        [
+          "url"
+        ]
+      ]
+    ],
+    [
+      "STENCIL-ROUTE-LINK",
+      "app-header.app-login.main-page.routes-page.stencil",
+      {
+        "$": "app-header.app-login.main-page.routes-page.stencil"
+      },
+      1,
+      [
+        [
+          "custom",
+          0,
+          1
+        ],
+        [
+          "router"
+        ],
+        [
+          "url"
+        ]
+      ]
+    ],
+    [
+      "STENCIL-ROUTER",
+      "app-header.app-login.main-page.routes-page.stencil",
+      {
+        "$": "app-header.app-login.main-page.routes-page.stencil"
+      },
+      1,
+      [
+        [
+          "root"
+        ]
+      ]
     ]
   ],
   "loader": "app.js",
-  "core": "app/app.3zyhdklr31al.js",
-  "coreEs5": "app/app.kj9hwkiyjauk.ce.js"
+  "core": "app/app.core.js",
+  "coreEs5": "app/app.core.ce.js"
 }
