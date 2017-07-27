@@ -6,14 +6,14 @@
   "scripts": {
     "build": "stencil build --prod",
     "start": "npm install && npm run build",
-    "dev": "node_modules/.bin/sd concurrent \"stencil build --watch\" \"stencil-dev-server --root www\" "
+    "dev": "sd concurrent \"stencil build --watch\" \"stencil-dev-server\" "
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ionic-team/stencil-starter.git"
   },
   "dependencies": {
-    "@stencil/core": "0.0.2-7",
+    "@stencil/core": "0.0.4-1",
     "jsdom": "^11.1.0"
   },
   "author": "Ionic Team",
@@ -24,6 +24,6 @@
   "homepage": "https://github.com/ionic-team/stencil",
   "devDependencies": {
     "@stencil/dev-server": "0.0.9",
-    "@stencil/utils": "0.0.2"
+    "@stencil/utils": "0.0.3"
   }
 }

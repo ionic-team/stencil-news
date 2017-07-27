@@ -28,16 +28,26 @@
           .catch(err => console.error('Error', err));
       }
     })*/
+</script>
+
+  <script>
+    window.addEventListener('load', () => {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('firebase-messaging-sw.js')
+          .then(() => console.log('firebase worker installed'))
+          .catch(err => console.error('Error', err))
+      }
+    })
   </script>
 
   <script>
     !function () { "use strict"; function e() { return t || (t = new Promise(function (e, n) { var t = indexedDB.open("keyval-store", 1); t.onerror = function () { n(t.error) }, t.onupgradeneeded = function () { t.result.createObjectStore("keyval") }, t.onsuccess = function () { e(t.result) } })), t } function n(n, t) { return e().then(function (e) { return new Promise(function (r, o) { var u = e.transaction("keyval", n); u.oncomplete = function () { r() }, u.onerror = function () { o(u.error) }, t(u.objectStore("keyval")) }) }) } var t, r = { get: function (e) { var t; return n("readonly", function (n) { t = n.get(e) }).then(function () { return t.result }) }, set: function (e, t) { return n("readwrite", function (n) { n.put(t, e) }) }, "delete": function (e) { return n("readwrite", function (n) { n["delete"](e) }) }, clear: function () { return n("readwrite", function (e) { e.clear() }) }, keys: function () { var e = []; return n("readonly", function (n) { (n.openKeyCursor || n.openCursor).call(n).onsuccess = function () { this.result && (e.push(this.result.key), this.result["continue"]()) } }).then(function () { return e }) } }; "undefined" != typeof module && module.exports ? module.exports = r : "function" == typeof define && define.amd ? define("idbKeyval", [], function () { return r }) : self.idbKeyval = r }();
   </script>
 
-  <script src="https://www.gstatic.com/firebasejs/4.1.4/firebase.js"></script>
+  <script class='firebaseScript' src="https://www.gstatic.com/firebasejs/4.1.4/firebase.js"></script>
+  <script class='firebaseScript' src="https://www.gstatic.com/firebasejs/4.1.5/firebase-messaging.js"></script>
   <!--<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-auth.js"></script>-->
   <script>
-    // Initialize Firebase
     var config = {
       apiKey: "AIzaSyCs-_kK2lRJie9-P-FUZYXJGWrUBuII7j0",
       authDomain: "stencilnews.firebaseapp.com",
@@ -47,7 +57,6 @@
       messagingSenderId: "597314505791"
     };
     firebase.initializeApp(config);
-
   </script>
 
 </body>

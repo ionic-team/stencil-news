@@ -6,3 +6,8 @@ exports.config = {
     { components: ['app-toast']}
   ]
 };
+
+exports.devServer = {
+  root: 'www',
+  watchGlob: '**/**'
+}

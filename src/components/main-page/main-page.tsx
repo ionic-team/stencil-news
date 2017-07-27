@@ -1,4 +1,4 @@
-import { Component, h, State } from '@stencil/core';
+import { Component, State } from '@stencil/core';
 
 declare var idbKeyval: any;
 
@@ -95,11 +95,11 @@ export class MainPage {
             <button class='loadButton' onClick={() => this.fetchNews('engadget')}>Engadget</button>
           </div>
 
-          <h3 class='newsProviders'>Offline Articles</h3>
-
           <div class='loginBlock'>
             <app-login></app-login>
           </div>
+
+          <h3 class='newsProviders'>Offline Articles</h3>
 
           <div id='savedBlock'>
             {offlineArticles}
@@ -129,6 +129,10 @@ export class MainPage {
             <button class='loadButton' onClick={() => this.fetchNews('the-next-web')}>The Next Web</button>
             <button class='loadButton' onClick={() => this.fetchNews('the-verge')}>The Verge</button>
             <button class='loadButton' onClick={() => this.fetchNews('engadget')}>Engadget</button>
+          </div>
+
+          <div class='loginBlock'>
+            <app-login></app-login>
           </div>
 
           <h3 class='newsProviders'>Offline Articles</h3>

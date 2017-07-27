@@ -1,0 +1,99 @@
+{
+  "namespace": "App",
+  "components": [
+    [
+      "APP-HEADER",
+      "04uq3upfrrsb",
+      {
+        "$": "5odjhhzqkfo8"
+      }
+    ],
+    [
+      "APP-LIST",
+      "4k29d7juvmjz",
+      {
+        "$": "bttd2zlkhe15"
+      },
+      0,
+      [
+        [
+          "articles"
+        ]
+      ]
+    ],
+    [
+      "APP-LOGIN",
+      "04uq3upfrrsb",
+      {
+        "$": "5odjhhzqkfo8"
+      }
+    ],
+    [
+      "APP-TOAST",
+      "pyejo2xryul0",
+      {
+        "$": "3t1gedldn6t4"
+      },
+      1,
+      [
+        [
+          "open",
+          0,
+          1
+        ]
+      ]
+    ],
+    [
+      "LAZY-AD",
+      "4k29d7juvmjz",
+      {
+        "$": "bttd2zlkhe15"
+      },
+      0,
+      [
+        [
+          "src"
+        ]
+      ]
+    ],
+    [
+      "LAZY-IMG",
+      "4k29d7juvmjz",
+      {
+        "$": "bttd2zlkhe15"
+      },
+      0,
+      [
+        [
+          "alt"
+        ],
+        [
+          "src"
+        ]
+      ]
+    ],
+    [
+      "MAIN-PAGE",
+      "04uq3upfrrsb",
+      {
+        "$": "5odjhhzqkfo8"
+      }
+    ],
+    [
+      "SHARE-BUTTON",
+      "4k29d7juvmjz",
+      {
+        "$": "bttd2zlkhe15"
+      },
+      1,
+      [
+        [
+          "urlToShare"
+        ]
+      ]
+    ]
+  ],
+  "loader": "app.js",
+  "core": "app/app.3zyhdklr31al.js",
+  "coreEs5": "app/app.kj9hwkiyjauk.ce.js"
+}

@@ -1,4 +1,4 @@
-import { Component, h, Prop, State } from '@stencil/core';
+import { Component, Element, Prop, State } from '@stencil/core';
 
 
 @Component({
@@ -6,7 +6,8 @@ import { Component, h, Prop, State } from '@stencil/core';
   styleUrl: 'lazy-ad.scss'
 })
 export class LazyAd {
-
+  
+  @Element() el: HTMLElement;
   @Prop() src: string;
   @State() _io: any;
   @State() _iframeCreated: boolean;
@@ -22,12 +23,12 @@ export class LazyAd {
             this._io = new IntersectionObserver((data) => {
               if (data[0].intersectionRatio > 0.011) {
                 this._iframe.src = this.src;
-                this._io.unobserve((this as any).$el);
+                this._io.unobserve(this.el);
                 this.removeIntersectionObserver();
               }
             });
 
-            this._io.observe((this as any).$el);
+            this._io.observe(this.el);
           })
         } else {
           setTimeout(() => {
@@ -36,12 +37,12 @@ export class LazyAd {
             this._io = new IntersectionObserver((data) => {
               if (data[0].intersectionRatio > 0.011) {
                 this._iframe.src = this.src;
-                this._io.unobserve((this as any).$el);
+                this._io.unobserve(this.el);
                 this.removeIntersectionObserver();
               }
             });
 
-            this._io.observe((this as any).$el);
+            this._io.observe(this.el);
           }, 500);
         }
       } else {
@@ -65,7 +66,7 @@ export class LazyAd {
 
   createIframe(): any {
     this._iframe = document.createElement('iframe');
-    (this as any).$el.querySelector('div').appendChild(this._iframe);
+    this.el.querySelector('div').appendChild(this._iframe);
     this._iframeCreated = true;
   }
 

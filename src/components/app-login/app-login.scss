@@ -4,8 +4,12 @@ app-login {
   align-items: center;
   margin-top: 2em;
 
-  .loginButtonBlock {
+  .notifyBlock {
     width: 100%;
+
+    p {
+      text-align: center;
+    }
 
     button {
       border: none;

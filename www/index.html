@@ -1,0 +1,47 @@
+<!DOCTYPE html><html dir="ltr" lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <meta name="theme-color" content="#253136">
+
+  <link rel="manifest" href="manifest.json">
+
+  <title>StencilNews</title>
+
+</head>
+
+<body style="margin: 0; font-family: sans-serif;  background: #efefef;"> <main-page ssrv="0" class="💎"><app-header ssrc="0.0."></app-header><main class="content" ssrc="0.1"><h3 id="topStories" ssrc="0.0"><!--s.0.0-->Top Story<!--/--></h3><div id="topCard" ssrc="0.1"><h3 ssrc="0.0"><!--s.0.0-->Scientists are now using Wi-Fi to read human emotions<!--/--></h3><p id="desc" ssrc="0.1"><!--s.0.0-->Scientists at MIT are using Wi-Fi and AI to determine your emotional state. They've created an algorithm that can detect and measure individual heartbeats by bouncing RF signals off ...<!--/--></p><div id="actions" ssrc="0.2"><button id="readButton" ssrc="0.0"><!--s.0.0-->Read<!--/--></button></div></div><h3 class="newsProviders" ssrc="0.2"><!--s.0.0-->More News<!--/--></h3><div id="loadBlock" ssrc="0.3"><button class="loadButton" ssrc="0.0"><!--s.0.0-->The Next Web<!--/--></button><button class="loadButton" ssrc="0.1"><!--s.0.0-->The Verge<!--/--></button><button class="loadButton" ssrc="0.2"><!--s.0.0-->Engadget<!--/--></button></div><div class="loginBlock" ssrc="0.4"><app-login ssrc="0.0."></app-login></div><h3 class="newsProviders" ssrc="0.5"><!--s.0.0-->Offline Articles<!--/--></h3><div id="savedBlock" ssrc="0.6"><p id="noSaved" ssrc="0.0"><!--s.0.0-->Save some articles for offline reading!<!--/--></p></div></main></main-page> 
+<script>/*! Built with http://stenciljs.com */
+
+!function(e,t,d,n,p,i,r){(e.App=e.App||{}).components=i=i||[],(r=t.createElement("style")).innerHTML=(i.map(function(e){return e[0]}).join(",")+"{visibility:hidden}.💎{visibility:inherit}").toLowerCase(),r.innerHTML+="ion-app:not(.💎){display:none}",t.head.appendChild(r),(r=t.createElement("script")).src=e.customElements?"build/app/app.3zyhdklr31al.js":"build/app/app.kj9hwkiyjauk.ce.js",t.head.appendChild(r)}(window,document,0,0,0,[["APP-HEADER","04uq3upfrrsb",{$:"5odjhhzqkfo8"}],["APP-LIST","4k29d7juvmjz",{$:"bttd2zlkhe15"},0,[["articles"]]],["APP-LOGIN","04uq3upfrrsb",{$:"5odjhhzqkfo8"}],["APP-TOAST","pyejo2xryul0",{$:"3t1gedldn6t4"},1,[["open",0,1]]],["LAZY-AD","4k29d7juvmjz",{$:"bttd2zlkhe15"},0,[["src"]]],["LAZY-IMG","4k29d7juvmjz",{$:"bttd2zlkhe15"},0,[["alt"],["src"]]],["MAIN-PAGE","04uq3upfrrsb",{$:"5odjhhzqkfo8"}],["SHARE-BUTTON","4k29d7juvmjz",{$:"bttd2zlkhe15"},1,[["urlToShare"]]]]);</script>
+<script>
+    window.addEventListener('load', () => {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.error('Error', err));
+      }
+    })
+</script> <script>
+    window.addEventListener('load', () => {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('firebase-messaging-sw.js')
+          .then(() => console.log('firebase worker installed'))
+          .catch(err => console.error('Error', err))
+      }
+    })
+  </script> <script>
+    !function () { "use strict"; function e() { return t || (t = new Promise(function (e, n) { var t = indexedDB.open("keyval-store", 1); t.onerror = function () { n(t.error) }, t.onupgradeneeded = function () { t.result.createObjectStore("keyval") }, t.onsuccess = function () { e(t.result) } })), t } function n(n, t) { return e().then(function (e) { return new Promise(function (r, o) { var u = e.transaction("keyval", n); u.oncomplete = function () { r() }, u.onerror = function () { o(u.error) }, t(u.objectStore("keyval")) }) }) } var t, r = { get: function (e) { var t; return n("readonly", function (n) { t = n.get(e) }).then(function () { return t.result }) }, set: function (e, t) { return n("readwrite", function (n) { n.put(t, e) }) }, "delete": function (e) { return n("readwrite", function (n) { n["delete"](e) }) }, clear: function () { return n("readwrite", function (e) { e.clear() }) }, keys: function () { var e = []; return n("readonly", function (n) { (n.openKeyCursor || n.openCursor).call(n).onsuccess = function () { this.result && (e.push(this.result.key), this.result["continue"]()) } }).then(function () { return e }) } }; "undefined" != typeof module && module.exports ? module.exports = r : "function" == typeof define && define.amd ? define("idbKeyval", [], function () { return r }) : self.idbKeyval = r }();
+  </script> <script class="firebaseScript" src="https://www.gstatic.com/firebasejs/4.1.4/firebase.js"></script> <script class="firebaseScript" src="https://www.gstatic.com/firebasejs/4.1.5/firebase-messaging.js"></script> <!--<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-auth.js"></script>--> <script>
+    var config = {
+      apiKey: "AIzaSyCs-_kK2lRJie9-P-FUZYXJGWrUBuII7j0",
+      authDomain: "stencilnews.firebaseapp.com",
+      databaseURL: "https://stencilnews.firebaseio.com",
+      projectId: "stencilnews",
+      storageBucket: "stencilnews.appspot.com",
+      messagingSenderId: "597314505791"
+    };
+    firebase.initializeApp(config);
+  </script> </body></html>

@@ -1,4 +1,4 @@
-import { Component, h, Prop, State } from '@stencil/core';
+import { Component, Element, Prop, State } from '@stencil/core';
 
 
 @Component({
@@ -6,7 +6,8 @@ import { Component, h, Prop, State } from '@stencil/core';
   styleUrl: 'lazy-img.scss'
 })
 export class LazyImg {
-
+  
+  @Element() el: HTMLElement;
   @Prop() src: string;
   @Prop() alt: string;
   @State() io: any;
@@ -28,7 +29,7 @@ export class LazyImg {
       this.io = new IntersectionObserver((data) => {
         if (data[0].intersectionRatio > 0.011) {
           console.log('load');
-          const image: HTMLImageElement = (this as any).$el.querySelector('img');
+          const image: HTMLImageElement = this.el.querySelector('img');
           image.setAttribute('src', image.getAttribute('data-src'));
           image.onload = () => {
             image.removeAttribute('data-src');
@@ -37,7 +38,7 @@ export class LazyImg {
         }
       })
 
-      this.io.observe((this as any).$el.querySelector('img'));
+      this.io.observe(this.el.querySelector('img'));
     }
   }
 

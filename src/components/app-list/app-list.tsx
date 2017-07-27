@@ -1,4 +1,4 @@
-import { Component, h, Prop, State } from '@stencil/core';
+import { Component, Prop, State } from '@stencil/core';
 
 declare var idbKeyval: any;
 

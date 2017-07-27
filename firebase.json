@@ -7,7 +7,12 @@
     "headers": [
       {
         "source": "/",
-        "headers": [{"key": "Link", "value": "</build/app/app.bqqh45knywot.js>;rel=preload;as=script,</build/app/jwsnrjrgtmzt.js>;rel=preload;as=script,</build/app/y92l16xw3acq.css>;rel=preload;as=style"}]
+        "headers": [
+          {
+            "key": "Link",
+            "value": "</build/app/app.3zyhdklr31al.js>;rel=preload;as=script,</build/app/04uq3upfrrsb.js>;rel=preload;as=script,</build/app/5odjhhzqkfo8.css>;rel=preload;as=style"
+          }
+        ]
       }
     ]
   }
