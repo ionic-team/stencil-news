@@ -1,4 +1,4 @@
-# Stencil Starter App
+# StencilNews
 
 Stencil is a compiler for building fast web apps using Web Components.
 
@@ -8,9 +8,13 @@ Stencil components are just Web Components, so they work in any major framework 
 
 Stencil also enables a number of key capabilities on top of Web Components, in particular Server Side Rendering (SSR) without the need to run a headless browser, pre-rendering, and objects-as-properties (instead of just strings).
 
+This demo is a news PWA that showcases best practices and the performance of a stencil app. 
+
+On WebPageTest on a moto g and emerging markets 3g this app hits first paint in 1.9 seconds and is totally interactive at 2.1 seconds.
+
 ## Getting Started
 
-To start a new project using Stencil, clone this repo and run:
+To start this project on your machine, clone this repo and run:
 
 ```bash
 npm start
