@@ -42,25 +42,22 @@ exports['APP-TOAST'] = AppToast;
 /** app-toast: [1] host **/
 {},
 
-/** app-toast: [2] listeners **/
-0 /* no listeners */,
-
-/** app-toast: [3] states **/
+/** app-toast: [2] states **/
 0 /* no states */,
 
-/** app-toast: [4] propWillChanges **/
+/** app-toast: [3] propWillChanges **/
 0 /* no prop will change methods */,
 
-/** app-toast: [5] propDidChanges **/
+/** app-toast: [4] propDidChanges **/
 0 /* no prop did change methods */,
 
-/** app-toast: [6] events **/
+/** app-toast: [5] events **/
 0 /* no events */,
 
-/** app-toast: [7] methods **/
+/** app-toast: [6] methods **/
 0 /* no methods */,
 
-/** app-toast: [8] hostElementMember **/
+/** app-toast: [7] hostElementMember **/
 'el'
 
 ]

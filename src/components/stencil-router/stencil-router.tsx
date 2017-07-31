@@ -53,7 +53,9 @@ export class Router {
   }
 
   handlePopState(e) {
-    console.log('Pop state', e)
+    console.log('handled pop state called');
+    history.back();
+    this.el.dispatchEvent(new (window as any).CustomEvent('stencilRouterNavigation', { detail: this.routeMatch}));
   }
 
   handleHashChange(e) {

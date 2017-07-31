@@ -299,7 +299,9 @@ var Router = (function () {
         this.el.dispatchEvent(new window.CustomEvent('stencilRouterLoaded'));
     };
     Router.prototype.handlePopState = function (e) {
-        console.log('Pop state', e);
+        console.log('handled pop state called');
+        history.back();
+        this.el.dispatchEvent(new window.CustomEvent('stencilRouterNavigation', { detail: this.routeMatch }));
     };
     Router.prototype.handleHashChange = function (e) {
         console.log('Hash change', e);
@@ -338,10 +340,7 @@ exports['STENCIL-ROUTER'] = Router;
 /** app-login: [1] host **/
 {},
 
-/** app-login: [2] listeners **/
-0 /* no listeners */,
-
-/** app-login: [3] states **/
+/** app-login: [2] states **/
 ['messaging', 'permission']
 
 ],
@@ -354,10 +353,7 @@ exports['STENCIL-ROUTER'] = Router;
 /** main-page: [1] host **/
 {},
 
-/** main-page: [2] listeners **/
-0 /* no listeners */,
-
-/** main-page: [3] states **/
+/** main-page: [2] states **/
 ['articleSrc', 'offlineItems']
 
 ],
@@ -380,25 +376,22 @@ exports['STENCIL-ROUTER'] = Router;
 /** stencil-route: [1] host **/
 {},
 
-/** stencil-route: [2] listeners **/
-0 /* no listeners */,
-
-/** stencil-route: [3] states **/
+/** stencil-route: [2] states **/
 ['match', 'routerInstance'],
 
-/** stencil-route: [4] propWillChanges **/
+/** stencil-route: [3] propWillChanges **/
 0 /* no prop will change methods */,
 
-/** stencil-route: [5] propDidChanges **/
+/** stencil-route: [4] propDidChanges **/
 0 /* no prop did change methods */,
 
-/** stencil-route: [6] events **/
+/** stencil-route: [5] events **/
 0 /* no events */,
 
-/** stencil-route: [7] methods **/
+/** stencil-route: [6] methods **/
 0 /* no methods */,
 
-/** stencil-route: [8] hostElementMember **/
+/** stencil-route: [7] hostElementMember **/
 'el'
 
 ],
@@ -421,25 +414,22 @@ exports['STENCIL-ROUTER'] = Router;
 /** stencil-router: [1] host **/
 {},
 
-/** stencil-router: [2] listeners **/
-0 /* no listeners */,
-
-/** stencil-router: [3] states **/
+/** stencil-router: [2] states **/
 ['routeMatch'],
 
-/** stencil-router: [4] propWillChanges **/
+/** stencil-router: [3] propWillChanges **/
 0 /* no prop will change methods */,
 
-/** stencil-router: [5] propDidChanges **/
+/** stencil-router: [4] propDidChanges **/
 0 /* no prop did change methods */,
 
-/** stencil-router: [6] events **/
+/** stencil-router: [5] events **/
 0 /* no events */,
 
-/** stencil-router: [7] methods **/
+/** stencil-router: [6] methods **/
 ['match', 'navigateTo'],
 
-/** stencil-router: [8] hostElementMember **/
+/** stencil-router: [7] hostElementMember **/
 'el'
 
 ]

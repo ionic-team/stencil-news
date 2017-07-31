@@ -287,10 +287,7 @@ exports['SHARE-BUTTON'] = ShareButton;
 /** app-list: [1] host **/
 {},
 
-/** app-list: [2] listeners **/
-0 /* no listeners */,
-
-/** app-list: [3] states **/
+/** app-list: [2] states **/
 ['detail', 'saved']
 
 ],
@@ -303,25 +300,22 @@ exports['SHARE-BUTTON'] = ShareButton;
 /** lazy-ad: [1] host **/
 {},
 
-/** lazy-ad: [2] listeners **/
-0 /* no listeners */,
-
-/** lazy-ad: [3] states **/
+/** lazy-ad: [2] states **/
 ['_iframe', '_iframeCreated', '_io'],
 
-/** lazy-ad: [4] propWillChanges **/
+/** lazy-ad: [3] propWillChanges **/
 0 /* no prop will change methods */,
 
-/** lazy-ad: [5] propDidChanges **/
+/** lazy-ad: [4] propDidChanges **/
 0 /* no prop did change methods */,
 
-/** lazy-ad: [6] events **/
+/** lazy-ad: [5] events **/
 0 /* no events */,
 
-/** lazy-ad: [7] methods **/
+/** lazy-ad: [6] methods **/
 0 /* no methods */,
 
-/** lazy-ad: [8] hostElementMember **/
+/** lazy-ad: [7] hostElementMember **/
 'el'
 
 ],
@@ -334,25 +328,22 @@ exports['SHARE-BUTTON'] = ShareButton;
 /** lazy-img: [1] host **/
 {},
 
-/** lazy-img: [2] listeners **/
-0 /* no listeners */,
-
-/** lazy-img: [3] states **/
+/** lazy-img: [2] states **/
 ['io', 'oldSrc'],
 
-/** lazy-img: [4] propWillChanges **/
+/** lazy-img: [3] propWillChanges **/
 0 /* no prop will change methods */,
 
-/** lazy-img: [5] propDidChanges **/
+/** lazy-img: [4] propDidChanges **/
 0 /* no prop did change methods */,
 
-/** lazy-img: [6] events **/
+/** lazy-img: [5] events **/
 0 /* no events */,
 
-/** lazy-img: [7] methods **/
+/** lazy-img: [6] methods **/
 0 /* no methods */,
 
-/** lazy-img: [8] hostElementMember **/
+/** lazy-img: [7] hostElementMember **/
 'el'
 
 ],
@@ -365,10 +356,7 @@ exports['SHARE-BUTTON'] = ShareButton;
 /** list-page: [1] host **/
 {},
 
-/** list-page: [2] listeners **/
-0 /* no listeners */,
-
-/** list-page: [3] states **/
+/** list-page: [2] states **/
 ['articleSrc', 'sources']
 
 ],

@@ -5,15 +5,17 @@
   "description": "Stencil Starter App",
   "scripts": {
     "build": "stencil build --prod",
-    "start": "npm install && npm run build",
-    "dev": "sd concurrent \"stencil build --watch\" \"stencil-dev-server\" "
+    "dev": "sd concurrent \"stencil build --watch\" \"stencil-dev-server\" ",
+    "test": "stencil build --watch",
+    "serve": "stencil-dev-server",
+    "start": "npm run dev"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ionic-team/stencil-starter.git"
   },
   "dependencies": {
-    "@stencil/core": "0.0.4-1",
+    "@stencil/core": "0.0.4-2",
     "jsdom": "^11.1.0"
   },
   "author": "Ionic Team",
