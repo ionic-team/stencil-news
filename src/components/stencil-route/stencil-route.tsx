@@ -46,7 +46,7 @@ export class Route {
       })
 
       routerElement.addEventListener('stencilRouterNavigation', (e) => {
-        console.log('i got fired', e);
+        console.log('i got fired', e.detail);
         //console.log(`<stencil-route> for ${this.path} got nav event`, e.detail);
         this.match = e.detail;
       })
@@ -56,6 +56,7 @@ export class Route {
   }
 
   render() {
+    console.log('render called');
     if (!this.routerInstance) {
       return null;
     }

@@ -1,3 +1,20 @@
 /*! Built with http://stenciljs.com */
 
-!function(e,c,i,o,t,a,p){(e.App=e.App||{}).components=a=a||[],(p=c.createElement("style")).innerHTML=(a.map(function(e){return e[0]}).join(",")+"{visibility:hidden}.💎{visibility:inherit}").toLowerCase(),p.innerHTML+="ion-app:not(.💎){display:none}",c.head.appendChild(p),(p=c.createElement("script")).src=e.customElements?"build/app/app.zmqmcdvksoyy.js":"build/app/app.ehypaqtbz6um.ce.js",c.head.appendChild(p)}(window,document,0,0,0,[["APP-HEADER","jucqamkbqeb1",{$:"qopyj9ai3cuh"}],["APP-LIST","ex7hcmgtcbiy",{$:"oyimd1xcquqw"},0,[["articles"]]],["APP-LOGIN","jucqamkbqeb1",{$:"qopyj9ai3cuh"}],["APP-TOAST","t3i6afkoo90s",{$:"3t1gedldn6t4"},1,[["open",0,1]]],["LAZY-AD","ex7hcmgtcbiy",{$:"oyimd1xcquqw"},0,[["src"]]],["LAZY-IMG","ex7hcmgtcbiy",{$:"oyimd1xcquqw"},0,[["alt"],["src"]]],["LIST-PAGE","ex7hcmgtcbiy",{$:"oyimd1xcquqw"}],["MAIN-PAGE","jucqamkbqeb1",{$:"qopyj9ai3cuh"}],["ROUTES-PAGE","jucqamkbqeb1",{$:"qopyj9ai3cuh"}],["SHARE-BUTTON","ex7hcmgtcbiy",{$:"oyimd1xcquqw"},1,[["urlToShare"]]],["STENCIL-ROUTE","jucqamkbqeb1",{$:"qopyj9ai3cuh"},0,[["component"],["componentProps"],["exact",0,1],["router"],["url"]]],["STENCIL-ROUTE-LINK","jucqamkbqeb1",{$:"qopyj9ai3cuh"},1,[["custom",0,1],["router"],["url"]]],["STENCIL-ROUTER","jucqamkbqeb1",{$:"qopyj9ai3cuh"},1,[["root"]]]]);
+(function (window, document, appNamespace, appCore, appCoreEs5, components, x) {
+    'use strict';
+    // create global namespace if it doesn't already exist
+
+    (window[appNamespace] = window[appNamespace] || {}).components = components = components || [];
+    // auto hide components until they been fully hydrated
+    // reusing the "x" variable from the args for funzies
+    x = document.createElement('style');
+    x.innerHTML = (components.map(function (c) {
+        return c[0];
+    }).join(',') + '{visibility:hidden}.💎{visibility:inherit}').toLowerCase();
+    x.innerHTML += 'ion-app:not(.💎){display:none}';
+    document.head.appendChild(x);
+    // request the core file this browser needs
+    x = document.createElement('script');
+    x.src = window.customElements ? appCore : appCoreEs5;
+    document.head.appendChild(x);
+})(window, document, "App","build/app/app.core.js","build/app/app.core.ce.js",[["APP-HEADER","app-header.app-login.main-page.routes-page.stencil",{"$":"app-header.app-login.main-page.routes-page.stencil"}],["APP-LIST","app-list.lazy-ad.lazy-img.list-page.share-button",{"$":"app-list.lazy-ad.lazy-img.list-page.share-button"},0,[["articles"]]],["APP-LOGIN","app-header.app-login.main-page.routes-page.stencil",{"$":"app-header.app-login.main-page.routes-page.stencil"},0,0,[["e","m",true,true,true],["e","p",true,true,true]]],["APP-TOAST","app-toast",{"$":"app-toast"},1,[["open",0,1]]],["LAZY-AD","app-list.lazy-ad.lazy-img.list-page.share-button",{"$":"app-list.lazy-ad.lazy-img.list-page.share-button"},0,[["src"]]],["LAZY-IMG","app-list.lazy-ad.lazy-img.list-page.share-button",{"$":"app-list.lazy-ad.lazy-img.list-page.share-button"},0,[["alt"],["src"]]],["LIST-PAGE","app-list.lazy-ad.lazy-img.list-page.share-button",{"$":"app-list.lazy-ad.lazy-img.list-page.share-button"}],["MAIN-PAGE","app-header.app-login.main-page.routes-page.stencil",{"$":"app-header.app-login.main-page.routes-page.stencil"},0,0,[["r","a",true,true,true],["f","o",true,true,true]]],["ROUTES-PAGE","app-header.app-login.main-page.routes-page.stencil",{"$":"app-header.app-login.main-page.routes-page.stencil"}],["SHARE-BUTTON","app-list.lazy-ad.lazy-img.list-page.share-button",{"$":"app-list.lazy-ad.lazy-img.list-page.share-button"},1,[["urlToShare"]]],["STENCIL-ROUTE","app-header.app-login.main-page.routes-page.stencil",{"$":"app-header.app-login.main-page.routes-page.stencil"},0,[["component"],["componentProps"],["exact",0,1],["router"],["url"]],[["a","m",true,true,true],["o","r",true,true,true]]],["STENCIL-ROUTE-LINK","app-header.app-login.main-page.routes-page.stencil",{"$":"app-header.app-login.main-page.routes-page.stencil"},1,[["custom",0,1],["router"],["url"]]],["STENCIL-ROUTER","app-header.app-login.main-page.routes-page.stencil",{"$":"app-header.app-login.main-page.routes-page.stencil"},1,[["root"]]]]);

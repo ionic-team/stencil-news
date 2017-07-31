@@ -3,16 +3,16 @@
   "components": [
     [
       "APP-HEADER",
-      "jucqamkbqeb1",
+      "app-header.app-login.main-page.routes-page.stencil",
       {
-        "$": "qopyj9ai3cuh"
+        "$": "app-header.app-login.main-page.routes-page.stencil"
       }
     ],
     [
       "APP-LIST",
-      "ex7hcmgtcbiy",
+      "app-list.lazy-ad.lazy-img.list-page.share-button",
       {
-        "$": "oyimd1xcquqw"
+        "$": "app-list.lazy-ad.lazy-img.list-page.share-button"
       },
       0,
       [
@@ -23,16 +23,34 @@
     ],
     [
       "APP-LOGIN",
-      "jucqamkbqeb1",
+      "app-header.app-login.main-page.routes-page.stencil",
       {
-        "$": "qopyj9ai3cuh"
-      }
+        "$": "app-header.app-login.main-page.routes-page.stencil"
+      },
+      0,
+      0,
+      [
+        [
+          "e",
+          "m",
+          true,
+          true,
+          true
+        ],
+        [
+          "e",
+          "p",
+          true,
+          true,
+          true
+        ]
+      ]
     ],
     [
       "APP-TOAST",
-      "t3i6afkoo90s",
+      "app-toast",
       {
-        "$": "3t1gedldn6t4"
+        "$": "app-toast"
       },
       1,
       [
@@ -45,9 +63,9 @@
     ],
     [
       "LAZY-AD",
-      "ex7hcmgtcbiy",
+      "app-list.lazy-ad.lazy-img.list-page.share-button",
       {
-        "$": "oyimd1xcquqw"
+        "$": "app-list.lazy-ad.lazy-img.list-page.share-button"
       },
       0,
       [
@@ -58,9 +76,9 @@
     ],
     [
       "LAZY-IMG",
-      "ex7hcmgtcbiy",
+      "app-list.lazy-ad.lazy-img.list-page.share-button",
       {
-        "$": "oyimd1xcquqw"
+        "$": "app-list.lazy-ad.lazy-img.list-page.share-button"
       },
       0,
       [
@@ -74,30 +92,48 @@
     ],
     [
       "LIST-PAGE",
-      "ex7hcmgtcbiy",
+      "app-list.lazy-ad.lazy-img.list-page.share-button",
       {
-        "$": "oyimd1xcquqw"
+        "$": "app-list.lazy-ad.lazy-img.list-page.share-button"
       }
     ],
     [
       "MAIN-PAGE",
-      "jucqamkbqeb1",
+      "app-header.app-login.main-page.routes-page.stencil",
       {
-        "$": "qopyj9ai3cuh"
-      }
+        "$": "app-header.app-login.main-page.routes-page.stencil"
+      },
+      0,
+      0,
+      [
+        [
+          "r",
+          "a",
+          true,
+          true,
+          true
+        ],
+        [
+          "f",
+          "o",
+          true,
+          true,
+          true
+        ]
+      ]
     ],
     [
       "ROUTES-PAGE",
-      "jucqamkbqeb1",
+      "app-header.app-login.main-page.routes-page.stencil",
       {
-        "$": "qopyj9ai3cuh"
+        "$": "app-header.app-login.main-page.routes-page.stencil"
       }
     ],
     [
       "SHARE-BUTTON",
-      "ex7hcmgtcbiy",
+      "app-list.lazy-ad.lazy-img.list-page.share-button",
       {
-        "$": "oyimd1xcquqw"
+        "$": "app-list.lazy-ad.lazy-img.list-page.share-button"
       },
       1,
       [
@@ -108,9 +144,9 @@
     ],
     [
       "STENCIL-ROUTE",
-      "jucqamkbqeb1",
+      "app-header.app-login.main-page.routes-page.stencil",
       {
-        "$": "qopyj9ai3cuh"
+        "$": "app-header.app-login.main-page.routes-page.stencil"
       },
       0,
       [
@@ -131,13 +167,29 @@
         [
           "url"
         ]
+      ],
+      [
+        [
+          "a",
+          "m",
+          true,
+          true,
+          true
+        ],
+        [
+          "o",
+          "r",
+          true,
+          true,
+          true
+        ]
       ]
     ],
     [
       "STENCIL-ROUTE-LINK",
-      "jucqamkbqeb1",
+      "app-header.app-login.main-page.routes-page.stencil",
       {
-        "$": "qopyj9ai3cuh"
+        "$": "app-header.app-login.main-page.routes-page.stencil"
       },
       1,
       [
@@ -156,9 +208,9 @@
     ],
     [
       "STENCIL-ROUTER",
-      "jucqamkbqeb1",
+      "app-header.app-login.main-page.routes-page.stencil",
       {
-        "$": "qopyj9ai3cuh"
+        "$": "app-header.app-login.main-page.routes-page.stencil"
       },
       1,
       [
@@ -169,6 +221,6 @@
     ]
   ],
   "loader": "app.js",
-  "core": "app/app.zmqmcdvksoyy.js",
-  "coreEs5": "app/app.ehypaqtbz6um.ce.js"
+  "core": "app/app.core.js",
+  "coreEs5": "app/app.core.ce.js"
 }

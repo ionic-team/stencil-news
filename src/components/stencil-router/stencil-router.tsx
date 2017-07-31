@@ -52,9 +52,12 @@ export class Router {
     this.el.dispatchEvent(new (window as any).CustomEvent('stencilRouterLoaded'))
   }
 
-  handlePopState(e) {
-    console.log('handled pop state called');
-    history.back();
+  handlePopState() {
+    console.log('handled pop state called', window.location.pathname);
+    window.history.pushState(null, null, window.location.pathname || '/');
+    this.routeMatch = {
+      url: window.location.pathname
+    }
     this.el.dispatchEvent(new (window as any).CustomEvent('stencilRouterNavigation', { detail: this.routeMatch}));
   }
 
