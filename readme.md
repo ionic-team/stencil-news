@@ -11,6 +11,7 @@ Stencil also enables a number of key capabilities on top of Web Components, in p
 This demo is a news PWA that showcases best practices and the performance of a stencil app. 
 
 On WebPageTest on a moto g and emerging markets 3g this app hits first paint in 1.9 seconds and is totally interactive at 2.1 seconds.
+https://www.webpagetest.org/lighthouse.php?test=170731_ZK_1DQW&run=2
 
 ## Getting Started
 
