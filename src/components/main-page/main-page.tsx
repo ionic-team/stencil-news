@@ -81,10 +81,6 @@ export class MainPage {
             </stencil-route-link>
           </div>
 
-          <div class='loginBlock'>
-            <app-login></app-login>
-          </div>
-
           <h3 class='newsProviders'>Offline Articles</h3>
 
           <div id='savedBlock'>
@@ -116,10 +112,6 @@ export class MainPage {
             <stencil-route-link router="#router" url="/news" custom={true}>
               <button>News</button>
             </stencil-route-link>
-          </div>
-
-          <div class='loginBlock'>
-            <app-login></app-login>
           </div>
 
           <h3 class='newsProviders'>Offline Articles</h3>
