@@ -1,7 +1,7 @@
 {
   "name": "StencilNews",
   "short_name": "StencilNews",
-  "start_url": "index.html",
+  "start_url": "/",
   "display": "standalone",
   "icons": [{
     "src": "images/512.png",
