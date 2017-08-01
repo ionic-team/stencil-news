@@ -26,25 +26,7 @@
       "app-header.app-login.main-page.routes-page.stencil",
       {
         "$": "app-header.app-login.main-page.routes-page.stencil"
-      },
-      0,
-      0,
-      [
-        [
-          "e",
-          "m",
-          true,
-          true,
-          true
-        ],
-        [
-          "e",
-          "p",
-          true,
-          true,
-          true
-        ]
-      ]
+      }
     ],
     [
       "APP-TOAST",
@@ -102,25 +84,7 @@
       "app-header.app-login.main-page.routes-page.stencil",
       {
         "$": "app-header.app-login.main-page.routes-page.stencil"
-      },
-      0,
-      0,
-      [
-        [
-          "r",
-          "a",
-          true,
-          true,
-          true
-        ],
-        [
-          "f",
-          "o",
-          true,
-          true,
-          true
-        ]
-      ]
+      }
     ],
     [
       "ROUTES-PAGE",
@@ -166,22 +130,6 @@
         ],
         [
           "url"
-        ]
-      ],
-      [
-        [
-          "a",
-          "m",
-          true,
-          true,
-          true
-        ],
-        [
-          "o",
-          "r",
-          true,
-          true,
-          true
         ]
       ]
     ],
