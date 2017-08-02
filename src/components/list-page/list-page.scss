@@ -1,4 +1,13 @@
 list-page {
+
+  h2 {
+    display: none;
+  }
+
+  ul {
+    margin-top: 2.8em;
+  }
+
   #tabs {
     position: fixed;
     bottom: 0;

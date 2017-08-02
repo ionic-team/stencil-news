@@ -39,7 +39,7 @@ export class RouteLink {
       );
     } else {
       return (
-        <a onClick={this.handleClick.bind(this)}>
+        <a href={this.url} onClick={this.handleClick.bind(this)}>
           <slot></slot>
         </a>
       )
