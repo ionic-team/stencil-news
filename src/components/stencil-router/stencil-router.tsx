@@ -37,7 +37,8 @@ export class Router {
   componentWillLoad() {
     console.log('<stencil-router> loaded');
     window.addEventListener('popstate', this.handlePopState.bind(this));
-    window.addEventListener('hashchange', this.handleHashChange.bind(this));
+    // window.addEventListener('hashchange', this.handleHashChange.bind(this));
+    window.onhashchange = this.handleHashChange.bind(this);
 
     const initialPath = window.location.pathname;
     //const withoutBase = '';

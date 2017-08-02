@@ -24,11 +24,11 @@ const fileManifest = [
   },
   {
     "url": "build/app.js",
-    "revision": "05d85491d7183ee3f52b17597641d01c"
+    "revision": "0df97155b164335f5e9e8e2128f09874"
   },
   {
     "url": "build/app.registry.json",
-    "revision": "5c64818f82472fc1fc8389c92ec6c4e5"
+    "revision": "1e97b249e009cc4d31c6e6b17a6e80d4"
   },
   {
     "url": "build/app\\3t1gedldn6t4.css",
@@ -51,16 +51,16 @@ const fileManifest = [
     "revision": "a41291ba87df5e5257acf9b9e016fa44"
   },
   {
-    "url": "build/app\\lnowvfhlwlt0.js",
-    "revision": "341d1127145ad121a8a23f34e2103eff"
-  },
-  {
     "url": "build/app\\qopyj9ai3cuh.css",
     "revision": "f8be421ca5f8202aa3443735ff01e2de"
   },
   {
     "url": "build/app\\t3i6afkoo90s.js",
     "revision": "95d6132216909cbd81389b0f8a096a79"
+  },
+  {
+    "url": "build/app\\tnkdug5xknry.js",
+    "revision": "f8719c404da45e2e0bf3bbad51ca36a9"
   },
   {
     "url": "favicon.ico",
@@ -72,7 +72,7 @@ const fileManifest = [
   },
   {
     "url": "index.html",
-    "revision": "3748818a210506c4a7a3100b94424efd"
+    "revision": "67f2cd3b9daa9166b5af667c525d27cb"
   },
   {
     "url": "manifest.json",

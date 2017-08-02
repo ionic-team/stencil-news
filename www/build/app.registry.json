@@ -3,16 +3,16 @@
   "components": [
     [
       "APP-HEADER",
-      "app-header.app-login.main-page.routes-page.stencil",
+      "w2slvz9rltap",
       {
-        "$": "app-header.app-login.main-page.routes-page.stencil"
+        "$": "9xuervfc3ecy"
       }
     ],
     [
       "APP-LIST",
-      "app-list.lazy-ad.lazy-img.list-page.share-button",
+      "ex7hcmgtcbiy",
       {
-        "$": "app-list.lazy-ad.lazy-img.list-page.share-button"
+        "$": "bgm9gptorepe"
       },
       0,
       [
@@ -22,35 +22,10 @@
       ]
     ],
     [
-      "APP-LOGIN",
-      "app-header.app-login.main-page.routes-page.stencil",
-      {
-        "$": "app-header.app-login.main-page.routes-page.stencil"
-      },
-      0,
-      0,
-      [
-        [
-          "e",
-          "m",
-          true,
-          true,
-          true
-        ],
-        [
-          "e",
-          "p",
-          true,
-          true,
-          true
-        ]
-      ]
-    ],
-    [
       "APP-TOAST",
-      "app-toast",
+      "t3i6afkoo90s",
       {
-        "$": "app-toast"
+        "$": "3t1gedldn6t4"
       },
       1,
       [
@@ -63,9 +38,9 @@
     ],
     [
       "LAZY-AD",
-      "app-list.lazy-ad.lazy-img.list-page.share-button",
+      "ex7hcmgtcbiy",
       {
-        "$": "app-list.lazy-ad.lazy-img.list-page.share-button"
+        "$": "bgm9gptorepe"
       },
       0,
       [
@@ -76,9 +51,9 @@
     ],
     [
       "LAZY-IMG",
-      "app-list.lazy-ad.lazy-img.list-page.share-button",
+      "ex7hcmgtcbiy",
       {
-        "$": "app-list.lazy-ad.lazy-img.list-page.share-button"
+        "$": "bgm9gptorepe"
       },
       0,
       [
@@ -92,30 +67,30 @@
     ],
     [
       "LIST-PAGE",
-      "app-list.lazy-ad.lazy-img.list-page.share-button",
+      "ex7hcmgtcbiy",
       {
-        "$": "app-list.lazy-ad.lazy-img.list-page.share-button"
+        "$": "bgm9gptorepe"
       }
     ],
     [
       "MAIN-PAGE",
-      "app-header.app-login.main-page.routes-page.stencil",
+      "w2slvz9rltap",
       {
-        "$": "app-header.app-login.main-page.routes-page.stencil"
+        "$": "9xuervfc3ecy"
       }
     ],
     [
       "ROUTES-PAGE",
-      "app-header.app-login.main-page.routes-page.stencil",
+      "w2slvz9rltap",
       {
-        "$": "app-header.app-login.main-page.routes-page.stencil"
+        "$": "9xuervfc3ecy"
       }
     ],
     [
       "SHARE-BUTTON",
-      "app-list.lazy-ad.lazy-img.list-page.share-button",
+      "ex7hcmgtcbiy",
       {
-        "$": "app-list.lazy-ad.lazy-img.list-page.share-button"
+        "$": "bgm9gptorepe"
       },
       1,
       [
@@ -126,9 +101,9 @@
     ],
     [
       "STENCIL-ROUTE",
-      "app-header.app-login.main-page.routes-page.stencil",
+      "w2slvz9rltap",
       {
-        "$": "app-header.app-login.main-page.routes-page.stencil"
+        "$": "9xuervfc3ecy"
       },
       0,
       [
@@ -149,29 +124,13 @@
         [
           "url"
         ]
-      ],
-      [
-        [
-          "a",
-          "m",
-          true,
-          true,
-          true
-        ],
-        [
-          "o",
-          "r",
-          true,
-          true,
-          true
-        ]
       ]
     ],
     [
       "STENCIL-ROUTE-LINK",
-      "app-header.app-login.main-page.routes-page.stencil",
+      "w2slvz9rltap",
       {
-        "$": "app-header.app-login.main-page.routes-page.stencil"
+        "$": "9xuervfc3ecy"
       },
       1,
       [
@@ -190,28 +149,19 @@
     ],
     [
       "STENCIL-ROUTER",
-      "app-header.app-login.main-page.routes-page.stencil",
+      "w2slvz9rltap",
       {
-        "$": "app-header.app-login.main-page.routes-page.stencil"
+        "$": "9xuervfc3ecy"
       },
       1,
       [
         [
           "root"
         ]
-      ],
-      [
-        [
-          "o",
-          "r",
-          true,
-          true,
-          true
-        ]
       ]
     ]
   ],
   "loader": "app.js",
-  "core": "app/app.core.js",
-  "coreEs5": "app/app.core.ce.js"
+  "core": "app/app.zmqmcdvksoyy.js",
+  "coreEs5": "app/app.ehypaqtbz6um.ce.js"
 }
