@@ -10,7 +10,7 @@
     ],
     [
       "APP-LIST",
-      "ex7hcmgtcbiy",
+      "nocanrjeydzn",
       {
         "$": "bgm9gptorepe"
       },
@@ -38,7 +38,7 @@
     ],
     [
       "LAZY-AD",
-      "ex7hcmgtcbiy",
+      "nocanrjeydzn",
       {
         "$": "bgm9gptorepe"
       },
@@ -51,7 +51,7 @@
     ],
     [
       "LAZY-IMG",
-      "ex7hcmgtcbiy",
+      "nocanrjeydzn",
       {
         "$": "bgm9gptorepe"
       },
@@ -67,7 +67,7 @@
     ],
     [
       "LIST-PAGE",
-      "ex7hcmgtcbiy",
+      "nocanrjeydzn",
       {
         "$": "bgm9gptorepe"
       }
@@ -88,7 +88,7 @@
     ],
     [
       "SHARE-BUTTON",
-      "ex7hcmgtcbiy",
+      "nocanrjeydzn",
       {
         "$": "bgm9gptorepe"
       },
@@ -162,6 +162,6 @@
     ]
   ],
   "loader": "app.js",
-  "core": "app/app.zmqmcdvksoyy.js",
-  "coreEs5": "app/app.ehypaqtbz6um.ce.js"
+  "core": "app/app.gpsuqcrkyawe.js",
+  "coreEs5": "app/app.zl1d3inmkul0.ce.js"
 }
